@@ -1,0 +1,95 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: HTKMiner and HTKnegFIN algorithms
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Konstantinos
+    family-names: Malliaridis
+    email: terminal_gr@yahoo.com
+    affiliation: >-
+      Department of Information and Electronic Engineering
+      International Hellenic University
+    orcid: 'https://orcid.org/0009-0000-0787-8674'
+repository-code: 'https://github.com/terminal0gr/HTKMiner'
+abstract: >
+  Mining frequent patterns is a core task in data mining,
+  aiming to uncover the
+
+  most recurrent patterns within a transaction database.
+  Traditional approaches
+
+  require specifying a minimum support threshold, a
+  parameter that is often dif-
+
+  ficult to determine and can significantly impact the
+  results. An alternative and
+
+  increasingly popular approach is to specify the number of
+  top frequent patterns
+
+  to retrieve, known as Top-K frequent pattern mining. In
+  this paper, we pro-
+
+  pose two novel algorithms—HTK-Miner and
+  HTK-negFIN—designed for efficient
+
+  Top-K frequent pattern discovery. HTK-Miner operates in
+  four distinct modes
+
+  depending on the internal data representation (tidsets,
+  bitsets, and diffsets), and
+
+  introduces several key innovations. It employs a
+  lightweight Quick Heap (Q-Heap)
+
+  structure that dynamically raises the support threshold,
+  enabling early pruning
+
+  and faster pattern identification. Moreover, it builds a
+  dictionary-based bitset
+
+  vertical representation of the database with a single
+  scan, compressing transac-
+
+  tion identifiers into compact integers—significantly
+  reducing memory usage and
+
+  improving lookup efficiency. HTK-negFIN is an extension of
+  the state-of-the-art
+
+  negFIN algorithm and follows the pattern-growth paradigm.
+  While preserving the
+
+  core principles of negFIN, it integrates the Q-Heap and
+  borrows several optimiza-
+
+  tions from HTK-Miner to enhance its performance without
+  sacrificing accuracy.
+
+  Extensive experiments on diverse benchmark datasets show
+  that HTK-Miner per-
+
+  forms better than HTK-negFIN and consistently outperforms
+  existing methods,
+
+  achieving significant improvements in both runtime and
+  memory efficiency. These
+
+  results highlight the potential of our proposed algorithms
+  as robust and scalable
+
+  solutions for Top-K frequent pattern mining.
+
+  1
+keywords:
+  - HTK-Miner
+  - HTK-negFIN
+  - Q-Heap
+  - Top-K frequent patterns
+version: 1.0.0
+date-released: '2025-04-23'
