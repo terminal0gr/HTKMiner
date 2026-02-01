@@ -1,7 +1,7 @@
 Implementation of HTKMiner and HTKnegFIN algorithms
 
 For more details please refer to:
-Efficient techniques for retrieving top-K Frequent itemsets
+Efficient techniques for retrieving top-K frequent itemsets
 Corresponding author: Malliaridis Konstantinos
 
 Abstract
