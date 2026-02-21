@@ -1,4 +1,4 @@
-Implementation of $\color{color_name}{HTKMiner}$ and <span style="color: orange; font-weight: bold; font-size: inherit;">HTKnegFIN</span> algorithms
+Implementation of $\color{orange}{HTKMiner}$ and <span style="color: orange; font-weight: bold; font-size: inherit;">HTKnegFIN</span> algorithms
 
 For more details please refer to:
 Efficient techniques for retrieving top-K frequent itemsets
