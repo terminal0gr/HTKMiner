@@ -13,3 +13,5 @@ There is also an implementation of BTK algorithm used in our experiments.
 If you use these algorithms in your research, please cite our work:
 
 Malliaridis, K., & Ougiaroglou, S. (2026). Efficient techniques for retrieving top-K Frequent itemsets. Expert Systems with Applications, 131250.
+
+https://www.sciencedirect.com/science/article/pii/S0957417426001582
