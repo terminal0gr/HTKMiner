@@ -1,4 +1,4 @@
-Implementation of $\color{orange}{HTKMiner}$ and $\color{orange}{HTKnegFIN}$ algorithms
+Implementation of $\color{orange}{HTK-Miner}$ and $\color{orange}{HTK-negFIN}$ algorithms
 
 For more details please refer to:
 Efficient techniques for retrieving top-K frequent itemsets
