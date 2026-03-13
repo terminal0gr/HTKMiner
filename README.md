@@ -15,16 +15,16 @@ If you use these algorithms in your research, please cite our work:
 
 Malliaridis, K., & Ougiaroglou, S. (2026). Efficient techniques for retrieving top-K Frequent itemsets. Expert Systems with Applications, 131250.
 
-BibTeX:
-@article{MALLIARIDIS2026131250,
-title = {Efficient techniques for retrieving top-K frequent itemsets},
-journal = {Expert Systems with Applications},
-volume = {311},
-pages = {131250},
-year = {2026},
-issn = {0957-4174},
-doi = {https://doi.org/10.1016/j.eswa.2026.131250},
-url = {https://www.sciencedirect.com/science/article/pii/S0957417426001582},
-author = {Konstantinos Malliaridis and Stefanos Ougiaroglou},
-keywords = {HTK-Miner, HTK-negFIN, Q-Heap, Top- frequent itemsets}
-}
+BibTeX:<br>
+@article{MALLIARIDIS2026131250,<br>
+title = {Efficient techniques for retrieving top-K frequent itemsets},<br>
+journal = {Expert Systems with Applications},<br>
+volume = {311},<br>
+pages = {131250},<br>
+year = {2026},<br>
+issn = {0957-4174},<br>
+doi = {https://doi.org/10.1016/j.eswa.2026.131250},<br>
+url = {https://www.sciencedirect.com/science/article/pii/S0957417426001582},<br>
+author = {Konstantinos Malliaridis and Stefanos Ougiaroglou},<br>
+keywords = {HTK-Miner, HTK-negFIN, Q-Heap, Top- frequent itemsets}<br>
+}<br>
