@@ -1,29 +1,30 @@
-HTKMiner and HTKnegFIN algorithms
+Implementation of $\color{orange}{HTK-Miner}$ and $\color{orange}{HTK-negFIN}$ algorithms
 
-Efficient techniques for retrieving top-K Frequent Patterns
+For more details please refer to:
+Efficient techniques for retrieving top-K frequent itemsets
+Corresponding author: Malliaridis Konstantinos
+url: https://www.sciencedirect.com/science/article/pii/S0957417426001582 
 
-Abstract
-Mining frequent patterns is a core task in data mining, aiming to uncover the
-most recurrent patterns within a transaction database. Traditional approaches
-require specifying a minimum support threshold, a parameter that is often dif-
-ficult to determine and can significantly impact the results. An alternative and
-increasingly popular approach is to specify the number of top frequent patterns
-to retrieve, known as Top-K frequent pattern mining. In this paper, we pro-
-pose two novel algorithms—HTK-Miner and HTK-negFIN—designed for efficient
-Top-K frequent pattern discovery. HTK-Miner operates in four distinct modes
-depending on the internal data representation (tidsets, bitsets, and diffsets), and
-introduces several key innovations. It employs a lightweight Quick Heap (Q-Heap)
-structure that dynamically raises the support threshold, enabling early pruning
-and faster pattern identification. Moreover, it builds a dictionary-based bitset
-vertical representation of the database with a single scan, compressing transac-
-tion identifiers into compact integers—significantly reducing memory usage and
-improving lookup efficiency. HTK-negFIN is an extension of the state-of-the-art
-negFIN algorithm and follows the pattern-growth paradigm. While preserving the
-core principles of negFIN, it integrates the Q-Heap and borrows several optimiza-
-tions from HTK-Miner to enhance its performance without sacrificing accuracy.
-Extensive experiments on diverse benchmark datasets show that HTK-Miner per-
-forms better than HTK-negFIN and consistently outperforms existing methods,
-achieving significant improvements in both runtime and memory efficiency. These
-results highlight the potential of our proposed algorithms as robust and scalable
-solutions for Top-K frequent pattern mining.
+Abstract<br>
+Frequent itemset mining is a core data mining task aimed at uncovering recurrent patterns within transactional databases. Traditional methods rely on a minimum support threshold, which is often difficult to determine. Top-k mining offers a pragmatic alternative by retrieving the k most frequent itemsets. We propose two novel algorithms: HTK-Miner and HTK-negFIN. HTK-Miner, based on equivalence class theory and breadth-first search, utilizes vertical structures with four operational modes (TS, BSN, DTS, and DBSN). Its key innovation, the Quick Heap (Q-Heap), dynamically raises the support threshold to enable early pruning and accelerated identification. Furthermore, HTK-Miner requires a single database scan and employs compressed representations to reduce execution time and memory usage. HTK-negFIN adapts the pattern-growth paradigm by extending the efficient negFIN algorithm to the Top-$k$ framework, integrating the Q-Heap and shared optimizations to achieve high performance. Experiments on diverse benchmark datasets demonstrate that our proposed algorithms consistently outperform state-of-the-art methods in both runtime and memory efficiency. These results highlight HTK-Miner and HTK-negFIN as scalable, effective solutions for Top-$k$ frequent itemset mining.
 
+There is also an implementation of BTK algorithm used in our experiments.
+
+📜 Citation
+If you use these algorithms in your research, please cite our work:
+
+Malliaridis, K., & Ougiaroglou, S. (2026). Efficient techniques for retrieving top-K Frequent itemsets. Expert Systems with Applications, 131250.
+
+BibTeX:<br>
+@article{MALLIARIDIS2026131250,<br>
+title = {Efficient techniques for retrieving top-K frequent itemsets},<br>
+journal = {Expert Systems with Applications},<br>
+volume = {311},<br>
+pages = {131250},<br>
+year = {2026},<br>
+issn = {0957-4174},<br>
+doi = {https://doi.org/10.1016/j.eswa.2026.131250},<br>
+url = {https://www.sciencedirect.com/science/article/pii/S0957417426001582},<br>
+author = {Konstantinos Malliaridis and Stefanos Ougiaroglou},<br>
+keywords = {HTK-Miner, HTK-negFIN, Q-Heap, Top- frequent itemsets}<br>
+}<br>
