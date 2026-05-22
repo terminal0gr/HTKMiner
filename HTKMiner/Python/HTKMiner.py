@@ -670,7 +670,7 @@ class HTKMiner:
             # data = {", ".join(map(str, key)): value for key, value in self.finalTopK.items()}
             data = {", ".join(self.itemDict[item] for item in key): value for key, value in self.finalTopK.items()}
             with open(outputFile, "w") as file:
-                json.dump(data, file, indent=4)
+                json.dump(data, file, indent=4, ensure_ascii=False)
 
 # implementation of the quick heap which keeps only the Top-K supports in descending order
 # Quick and memory saver.
