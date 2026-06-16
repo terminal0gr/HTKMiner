@@ -17,8 +17,8 @@ class HTKMiner:
         self.min_count = 0  # The absolute minimum support 
         self.delimiter = delimiter 
         self.num_of_transactions = 0 # The count of transactions in database
-        self.itemCount = 0 # The count of items in database
-        self.TransitemCount = 0 # The count of all items in every transaction
+        self.itemCount = 0 # The unique count of items in database
+        self.TransitemCount = 0 # The overall count of items in every transaction
         self.topK = topK #User defined Tok-K threshold
         self.tidSet=tidSet # User specified, default True. True intersection mode, False Diffset mode
         self.bitSetMode=bitSetMode # User specified, default True. True bitSet mode, False tidSet mode
@@ -47,7 +47,7 @@ class HTKMiner:
             # The Tid of each transaction
             transIndex=0
             # The overall count of items in dataset
-            transitem=0 # Uncomment for stats only 
+            transitem=0 
             # The next 2 dictionaries are used to implement one bidirectional dictionary
             # The idea is to map item names to their indexes and perform better in the algorithm
             self.itemDict=dict()
@@ -55,7 +55,7 @@ class HTKMiner:
             b1=t.time() # start of reading
             for line in f:
                 for item in line.strip().split(sep=self.delimiter):
-                    transitem+=1 # Uncomment for stats only
+                    transitem+=1 
                     if item not in iSet:
                         itemIndex+=1
                         self.itemDict[itemIndex]=item
@@ -70,7 +70,7 @@ class HTKMiner:
             # statistics
             self.num_of_transactions=transIndex
             self.itemCount=itemIndex
-            self.TransitemCount=transitem # Uncomment for stats only
+            self.TransitemCount=transitem 
 
         item1TopK, self.min_count = self.InitialTopKFI(vR)
 
@@ -660,9 +660,9 @@ class HTKMiner:
         print(f"Items:{self.itemCount}")  
 
         # Uncomment only if self.TransitemCount has been computed in read dataset for stats
-        # avg=self.TransitemCount/self.num_of_transactions 
-        # print(f"Avg item size pre trans:{avg:.1f}")   
-        # print(f"Dataset density:{avg/self.itemCount:.5f}") 
+        avg=self.TransitemCount/self.num_of_transactions 
+        print(f"Avg item size pre trans:{avg:.1f}")   
+        print(f"Dataset density:{avg/self.itemCount:.5f}") 
 
     def writeFIM(self, outputFile=None): #outputs the frequent itemsets in json format
         if (outputFile):
